@@ -748,6 +748,30 @@ a:hover {
     max-width: 100%;
   }
 
+  .main__advantages-item_1 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .main__advantages-item_2 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .main__advantages-item_3 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .main__advantages-item_4 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+
   .main__advantages-title {
     position: relative;
     padding-left: 20px;
