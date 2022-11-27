@@ -1,0 +1,114 @@
+@import "reset";
+@import "fonts";
+@import "icomoon";
+@import "def/var";
+@import "def/mixin";
+@import "blocks/header";
+@import "blocks/menu";
+@import "blocks/main";
+@import "blocks/button";
+@import "blocks/footer";
+
+
+body {
+	font-family: Inter, Montserrat, icomoon;
+	font-size: 16px;
+	font-weight: 400;
+	background: #0E1014;
+	color: #E4E5EA;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: #E4E5EA;
+	transition: 0.5s;
+	&:hover {
+		color: $main-color;
+	}
+}
+
+.telegram {
+	&:hover {
+		color: #26a5e3;
+	}
+}
+
+.phone {
+	&:hover {
+		color: #9a188d;
+	}
+}
+
+.whatsapp {
+	&:hover {
+		color: #44c655;
+	}
+}
+
+
+.wrapper {
+	position: relative;
+}
+
+.figure {
+	position: absolute;
+	border-radius: 50%;
+	z-index: -1;
+	&_1 {
+		left: 42%;
+		top: -154px;
+		width: 259px;
+		height: 259px;
+		background: #833AB4;
+		opacity: 0.5;
+		filter: blur(196px);
+	}
+	&_2 {
+		width: 60px;
+		height: 60px;
+		left: 60%;
+		top: -2px;
+		background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
+		box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+		filter: blur(5px);
+		backdrop-filter: blur(2px);
+	}
+	&_3 {
+		position: absolute;
+		width: 83px;
+		height: 83px;
+		left: 519px;
+		top: 83px;
+		background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+		box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+		backdrop-filter: blur(2px);
+	}
+	&_4 {
+		position: absolute;
+		width: 311px;
+		height: 311px;
+		left: -102px;
+		top: 251px;
+		border-radius: 50%;
+		background: #961A1A;
+		opacity: 0.5;
+		filter: blur(196px);
+	}
+	&_5 {
+		width: 28px;
+		height: 28px;
+		left: 60%;
+		top: 547px;
+		background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+		box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+		filter: blur(2.5px);
+		backdrop-filter: blur(2px);
+	}
+}
+
+@import "blocks/media";

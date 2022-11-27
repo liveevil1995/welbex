@@ -1,0 +1,62 @@
+.main {
+    padding: 90px 0 69px 0;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-size: 48px;
+        line-height: 58px;
+        span {
+            @include title-clip;
+            font-weight: 900;
+        }
+        margin-bottom: 30px;
+    }
+    &__descr {
+        font-family: Montserrat;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    &__block {
+        &_2 {
+            text-align: right;
+            max-width: 329px;
+        }
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 40px;
+        span {
+            @include title-clip;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+        }
+    }
+    &__advantages {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: end;
+        margin-bottom: 61px;
+        &-item {
+            max-width: 136px;
+        }
+        &-title {
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            &_mobile {
+                display: none;
+            }
+        }
+        &-text {
+            font-family: Montserrat;
+            line-height: 20px;
+        }
+    }
+}
